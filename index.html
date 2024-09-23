@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Sobrevivente do Apocalipse</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo" id="passo-x">
+            <img src="" alt="">
+            <p>Game over</p>
+
+        </div>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="devastado após o apocalipse">
+            <p>Após um apocalipse devastador causado por uma guerra nuclear, a Terra se tornou um deserto inóspito. Você
+                é um dos poucos sobreviventes, lutando para encontrar recursos e respostas neste novo mundo sombrio.
+                Suas decisões moldarão seu destino e o dos poucos que ainda restam.</p>
+            <button class="btn-proximo" data-proximo="1">Aceitar o desafio</button>
+            <button class="btn-proximo" data-proximo="x">Desistir (fraco)</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png" alt="abrigo">
+            <p>Você acorda em um abrigo subterrâneo, a segurança provisória em um mundo hostil. O som de detonações
+                distantes ecoa pela superfície, e você percebe que precisa sair para buscar suprimentos antes que seja
+                tarde demais.</p>
+            <button class="btn-proximo" data-proximo="2">Investigar o abrigo</button>
+            <button class="btn-proximo" data-proximo="3">Sair e explorar a superfície</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2.png" alt="abrigo(comida e água)">
+            <p>Dentro do abrigo, você encontra alguns recursos: comida em conserva, água potável e um mapa desgastado. O
+                mapa indica que a antiga cidade próxima guarda segredos que podem ajudar a entender o que aconteceu. O
+                que você decide fazer?</p>
+            <button class="btn-proximo" data-proximo="5">Seguir para a cidade abandonada</button>
+            <button class="btn-proximo" data-proximo="6">Procurar mais suprimentos no abrigo</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo3.png" alt="fora do abrigo">
+            <p>Ao sair, você é recebido por um cenário desolador: prédios em ruínas e um céu encoberto por fumaça. Ao
+                longe, você vê o brilho de algo que parece ser uma estrutura intacta. Você deve decidir como prosseguir.
+            </p>
+            <button class="btn-proximo" data-proximo="7">Investigar a estrutura brilhante</button>
+            <button class="btn-proximo" data-proximo="8">Procurar abrigo em uma das ruínas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4.png" alt="voltando para o abrigo">
+            <p>Você decide que o mundo lá fora é perigoso demais e volta para o abrigo. Contudo, a incerteza e a fome o
+                perseguem. Você se pergunta se a aventura teria valido a pena.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5.png" alt="cidade abandonada">
+            <p>Na cidade abandonada, você encontra registros e diários de sobreviventes que revelam detalhes sobre o
+                apocalipse e uma possível fonte de água limpa nas montanhas. Você decide seguir para lá.</p>
+            <button class="btn-proximo" data-proximo="9">Viajar para as montanhas</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passo6.png" alt="grupo hostil">
+            <p>Enquanto procura mais suprimentos, você se depara com um grupo de sobreviventes hostis. Eles exigem que
+                você entregue suas provisões. Como você reage?</p>
+            <button class="btn-proximo" data-proximo="10">Negociar com eles</button>
+            <button class="btn-proximo" data-proximo="11">Fugir e tentar escapar</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7.png" alt="usina">
+            <p>Ao se aproximar da estrutura brilhante, você descobre que é uma antiga usina elétrica, ainda operando com
+                energia residual. Você encontra equipamentos que podem ser úteis, mas deve agir rapidamente.</p>
+            <button class="btn-proximo" data-proximo="12">Explorar a usina elétrica</button>
+            <button class="btn-proximo" data-proximo="4">Voltar para o abrigo</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="" alt="">
+            <p>Nas ruínas, você encontra uma mochila com suprimentos, mas também um grupo de bandidos se aproximando.
+                Você precisa decidir rapidamente.</p>
+            <button class="btn-proximo" data-proximo="13">Atacar os bandidos</button>
+            <button class="btn-proximo" data-proximo="4">Voltar para o abrigo</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-passo9.png" alt="montanha">
+            <p>As montanhas são traiçoeiras, mas você finalmente encontra uma fonte de água limpa. Ao beber, sente uma
+                onda de esperança, mas logo percebe que não está sozinho ali.</p>
+            <button class="btn-proximo" data-proximo="14">Preparar-se para um possível ataque</button>
+            <button class="btn-proximo" data-proximo="15">Investigar os arredores</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo10.png" alt="ruina">
+            <p>Você tenta negociar com o grupo, mas eles não estão dispostos a ouvir. Um confronto se inicia e você
+                precisa lutar pela sua vida.</p>
+            <button class="btn-proximo" data-proximo="16">Lutar com eles</button>
+            <button class="btn-proximo" data-proximo="4">Fugir para o abrigo</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11.png" alt="passagem secreta">
+            <p>Fugindo, você se perde nas ruínas e acaba cercado. Apesar da desvantagem, você encontra uma passagem
+                secreta que pode ser a sua salvação.</p>
+            <button class="btn-proximo" data-proximo="17">Entrar na passagem secreta</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/cenario-passo12.png" alt="usina gerador">
+            <p>Explorando a usina, você descobre um gerador que pode fornecer energia e segurança temporária. Você pode
+                usá-lo para criar um refúgio seguro.</p>
+            <button class="btn-proximo" data-proximo="18">Ativar o gerador</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="" alt="">
+            <p>Ao atacar os bandidos, você consegue se proteger, mas fica gravemente ferido. A luta o deixa sem
+                suprimentos e em busca de abrigo.</p>
+            <button class="btn-proximo" data-proximo="4">Voltar para o abrigo</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <img src="" alt="">
+            <p>Preparando-se para o ataque, você consegue se defender e espantar o invasor, mas percebe que sempre
+                estará em perigo nesse novo mundo.</p>
+            <button class="btn-proximo" data-proximo="19">Continuar sua jornada</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <img src="" alt="">
+            <p>Investigar os arredores revela um grupo de sobreviventes amigáveis que também buscam segurança. Juntos,
+                vocês formam uma nova comunidade.</p>
+            <button class="btn-proximo" data-proximo="20">Construir um novo futuro juntos</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="" alt="">
+            <p>Na luta, você consegue derrotar os bandidos, mas não sem consequências. Você deve seguir em frente e
+                encontrar um novo abrigo.</p>
+            <button class="btn-proximo" data-proximo="4">Voltar para o abrigo</button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <img src="img/cenario-passo17.png" alt="túnel subterrâneo">
+            <p>A passagem secreta leva a um túnel subterrâneo que conecta a várias áreas seguras. Você descobre que pode
+                usar esse sistema para se mover entre os sobreviventes.</p>
+            <button class="btn-proximo" data-proximo="19">Explorar mais o túnel</button>
+
+    </main>
+    <script src="script.js"></script>
+</body>
